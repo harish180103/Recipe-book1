@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-xs-10">
+      <app-storage-edit></app-storage-edit>
+      <hr>
+      <ul class="list-group">
+        <a
+          class="list-group-item"
+          style="cursor: pointer"
+          *ngFor="let storage of storageItems; let i=index"
+          (click)="editItem(i)"
+          >
+          {{ storage.name }} ({{ storage.amount }})
+        </a>
+      </ul>
+    </div>
+  </div>
+  

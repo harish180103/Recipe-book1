@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-xs-12">
+      <form (ngSubmit)="submit(f)" #f="ngForm">
+        <div class="row">
+          <div class="col-sm-5 form-group">
+            <label for="mailId">Email Id</label>
+            <input 
+            type="text"
+            id="mailId"
+            class="form-control"
+            name = "mailId"
+            ngModel
+            required
+            >
+          </div>
+          <div class="col-sm-5 form-group">
+            <label for="amount">Password</label>
+            <input 
+            type="text" 
+            id="password"
+            class="form-control"
+            name="password"
+            ngModel
+            required
+            minlength="6"
+            >
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <button class="btn btn-success" type="submit"  [disabled]="!f.valid"  >{{ editMode ? 'Update User' : 'Add User' }}</button>
+            <button class="btn btn-danger" type="button" (click)="Delete()" >Delete</button>
+            <button class="btn btn-primary" type="button" (click)="Clear()">Clear</button>
+          </div>
+        </div>
+      </form>
+    </div>
+</div>
+  

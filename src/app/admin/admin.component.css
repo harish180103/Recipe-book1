@@ -1,0 +1,48 @@
+
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color:rgb(234, 215, 188);
+    color: #473535;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    fill-rule: evenodd;
+    list-style-type: none;
+    display: flex;
+    background-color: antiquewhite
+}
+
+nav ul li {
+    flex: 1;
+    text-align: center;
+    padding: 20rem;
+}
+
+nav ul li a {
+    cursor: pointer;
+    
+    text-decoration: none;
+    color: #473f3f;
+}
+
+a:hover {
+    font-size: 150%;
+  }
+
+
+main {
+    padding: 2rem;
+}
+
+
